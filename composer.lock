@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a7cb82a4190f7a38b1405c21084b40f4",
-    "content-hash": "a8ecf1a967f287c27b871210595d34e2",
+    "hash": "e22a8a67b3cea78f36ad85ea1c1942e5",
+    "content-hash": "36c320c48ff7ba8c07719aeb62381267",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -1217,6 +1217,64 @@
                 "lumen"
             ],
             "time": "2016-08-01 14:48:25"
+        },
+        {
+            "name": "lcobucci/jwt",
+            "version": "3.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lcobucci/jwt.git",
+                "reference": "9a8db2cd42346f96993928ff6a6c22563f555ab1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/9a8db2cd42346f96993928ff6a6c22563f555ab1",
+                "reference": "9a8db2cd42346f96993928ff6a6c22563f555ab1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-openssl": "*",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "mdanter/ecc": "~0.3.1",
+                "mikey179/vfsstream": "~1.5",
+                "phpmd/phpmd": "~2.2",
+                "phpunit/php-invoker": "~1.1",
+                "phpunit/phpunit": "~4.5",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "suggest": {
+                "mdanter/ecc": "Required to use Elliptic Curves based algorithms."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lcobucci\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Luís Otávio Cobucci Oblonczyk",
+                    "email": "lcobucci@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to work with JSON Web Token and JSON Web Signature",
+            "keywords": [
+                "JWS",
+                "jwt"
+            ],
+            "time": "2016-07-27 11:09:37"
         },
         {
             "name": "monolog/monolog",

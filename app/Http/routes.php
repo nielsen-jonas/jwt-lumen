@@ -14,3 +14,13 @@
 $app->get('/', function () use ($app) {
     return $app->version();
 });
+
+
+$app->group(['prefix' => 'token', 'namespace' => 'App\Http\Controllers'], function () use ($app) {
+	$app->get('create', 'TokenController@create');
+});
+
+$app->group(['prefix' => 'token', 'middleware' => 'JWTAuth' ,'namespace' => 'App\Http\Controllers'], function () use ($app) {
+	$app->put('verify', 'TokenController@verify');
+});
+
